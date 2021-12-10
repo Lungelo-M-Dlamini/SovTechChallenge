@@ -11,12 +11,12 @@ function generate_component(allSkillImages) {
         for (let j=0; j<3; j++) {
             if (i < totalSkills) {
                 children.push(
-                    <Image 
+                    <img 
                         key={allSkillImages[i].id}
                         src={allSkillImages[i].fullPath}
                         alt={allSkillImages[i].id}
-                        height="100%"
-                        width="100%"
+                        height="50%"
+                        width="40%"
                         className={styles.logo}
                     />)
             }
@@ -36,5 +36,5 @@ export default function Skills({ allSkillImages }){
         <div className={styles.container}>
             {generate_component(allSkillImages)}
         </div>
-        )
+    )
 }
