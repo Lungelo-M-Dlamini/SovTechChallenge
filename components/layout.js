@@ -27,8 +27,8 @@ export default function Layout({children, home}){
                             height="200%" 
                             alt={name}
                         />
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
-                        <h4 className={utilStyles.graymatter}>{designation}</h4>  
+                        <h1 className={styles.heading2Xl}>{name}</h1>
+                        <h4 className={styles.graymatter}>{designation}</h4>  
             </header>
             <main>{children}</main>
             {!home && (
